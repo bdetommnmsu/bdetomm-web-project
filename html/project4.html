@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Brad's Travels - Find Your Destination</title>
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+   <nav>
+      <a href="../index.html">Home</a>
+      <a href="../html/project2.html">My Travels (P2)</a>
+      <a href="../html/project3.html">My Travels (P3)</a>
+      <a href="project4.html">Destination Quiz (P4)</a>
+   </nav>
+
+   <!-- Hero Header -->
+   <header class="hero">
+      <h1>Find Your Perfect Destination</h1>
+      <p>Answer a few quick questions and we'll recommend your next adventure.</p>
+   </header>
+
+   <main class="content">
+
+      <!-- Intro Section -->
+      <section>
+         <h2>Where Should You Go Next?</h2>
+         <p>
+            Not sure where to travel next? Whether you're craving adventure in the wilderness,
+            soaking up culture in a bustling city, or relaxing on a sun-soaked beach — this
+            quick quiz will point you in the right direction.
+         </p>
+         <p>
+            Based on my own travel experiences across Alaska, Victoria, the Caribbean, and Hong Kong,
+            plus my dream trips to Italy and Japan, I've put together a simple quiz to help match
+            your travel personality to a destination.
+         </p>
+      </section>
+
+      <hr>
+
+      <!-- Quiz Form -->
+      <section>
+         <h2>The Travel Quiz</h2>
+
+         <form id="quizForm">
+
+            <div class="form-group">
+               <label for="travelerName">Your Name:</label>
+               <input type="text" id="travelerName" name="travelerName"
+                      placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+               <label>1. What kind of scenery excites you most?</label>
+               <div class="radio-group">
+                  <label><input type="radio" name="q1" value="nature"> Rugged wilderness &amp; mountains</label>
+                  <label><input type="radio" name="q1" value="city"> Dazzling city skylines &amp; urban energy</label>
+                  <label><input type="radio" name="q1" value="beach"> Turquoise water &amp; white sand beaches</label>
+                  <label><input type="radio" name="q1" value="culture"> Ancient history &amp; charming towns</label>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label>2. What's your ideal travel pace?</label>
+               <div class="radio-group">
+                  <label><input type="radio" name="q2" value="active"> Non-stop exploring — I want to see everything</label>
+                  <label><input type="radio" name="q2" value="relaxed"> Slow and easy — I'm here to unwind</label>
+                  <label><input type="radio" name="q2" value="mixed"> A mix of adventure and downtime</label>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label>3. What food experience matters most to you?</label>
+               <div class="radio-group">
+                  <label><input type="radio" name="q3" value="seafood"> Fresh seafood and island flavors</label>
+                  <label><input type="radio" name="q3" value="street"> Street food, dim sum, and night markets</label>
+                  <label><input type="radio" name="q3" value="italian"> Pasta, pizza, and gelato</label>
+                  <label><input type="radio" name="q3" value="ramen"> Ramen, sushi, and Japanese cuisine</label>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label>4. Which activity sounds most appealing?</label>
+               <div class="radio-group">
+                  <label><input type="radio" name="q4" value="hiking"> Hiking through national parks</label>
+                  <label><input type="radio" name="q4" value="snorkeling"> Snorkeling and relaxing on the beach</label>
+                  <label><input type="radio" name="q4" value="museums"> Visiting museums and historic sites</label>
+                  <label><input type="radio" name="q4" value="temples"> Exploring temples and modern skyscrapers</label>
+               </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Find My Destination ✈</button>
+            <button type="reset" id="resetBtn">Start Over</button>
+
+         </form>
+      </section>
+
+      <!-- Quiz Result (hidden until submitted) -->
+      <section id="resultSection" class="result-box hidden">
+         <h2 id="resultGreeting"></h2>
+         <div id="resultContent"></div>
+      </section>
+
+      <hr>
+
+      <!-- Destinations Overview -->
+      <section>
+         <h2>Destinations in This Quiz</h2>
+         <p>Each quiz result maps to one of the destinations from my personal travel list. Here's a quick overview:</p>
+         <ul>
+            <li><strong>Alaska, USA</strong> — For the wilderness lover who wants epic scale and raw nature</li>
+            <li><strong>The Caribbean</strong> — For the beach lover who wants to fully unplug and relax</li>
+            <li><strong>Hong Kong</strong> — For the city explorer who thrives on energy and amazing food</li>
+            <li><strong>Italy</strong> — For the culture seeker drawn to history, art, and incredible cuisine</li>
+            <li><strong>Japan</strong> — For the curious traveler who wants ancient tradition meets modern wonder</li>
+         </ul>
+      </section>
+
+      <hr>
+
+      <!-- Image -->
+      <section>
+         <h2>A Glimpse of Alaska</h2>
+         <div class="img-container">
+            <img src="../images/alaska.jpg"
+                 alt="Denali mountain reflected in a pond in Denali National Park, Alaska">
+            <p class="img-caption">Denali National Park, Alaska &mdash; Photo via Wikimedia Commons (Public Domain)</p>
+         </div>
+      </section>
+
+      <hr>
+
+      <!-- Travel Tips -->
+      <section>
+         <h2>Quick Travel Tips</h2>
+         <p>Wherever you end up, keep these in mind:</p>
+         <ol>
+            <li>Research visa requirements at least 3 months before departure</li>
+            <li>Always purchase travel insurance — it's worth every penny</li>
+            <li>Learn a few words in the local language — locals love the effort</li>
+            <li>Download offline maps before you land</li>
+            <li>Pack light — you'll thank yourself later</li>
+         </ol>
+      </section>
+
+      <hr>
+
+      <!-- External Links -->
+      <section>
+         <h2>Useful Travel Resources</h2>
+         <ul>
+            <li><a href="https://www.nps.gov/state/ak/index.htm" target="_blank">Alaska National Parks — NPS.gov</a></li>
+            <li><a href="https://www.lonelyplanet.com/italy" target="_blank">Lonely Planet Italy</a></li>
+            <li><a href="https://www.japan-guide.com" target="_blank">Japan Guide</a></li>
+            <li><a href="https://www.tripadvisor.com" target="_blank">TripAdvisor — Reviews &amp; Trip Planning</a></li>
+         </ul>
+      </section>
+
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <p>&copy; 2026 Brad DeTommaso | ICT280 Spring 2026</p>
+   </footer>
+
+   <script src="../javascript/script.js"></script>
+
+</body>
+</html>
