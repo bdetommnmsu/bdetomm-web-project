@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us - GreenTech Solutions</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Skip to main content (accessibility) -->
+   <a href="#main" class="skip-link">Skip to main content</a>
+
+   <!-- Navigation -->
+   <nav aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Green<span>Tech</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="products.html">Products</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+   </nav>
+
+   <!-- Hero -->
+   <header class="hero-sub" role="banner">
+      <h1>Get in Touch</h1>
+      <p>Have a question about our products or want to schedule a free consultation?
+         We'd love to hear from you.</p>
+   </header>
+
+   <main id="main">
+
+      <!-- Contact Grid -->
+      <section aria-labelledby="contact-heading">
+         <div class="content">
+            <h2 class="section-title" id="contact-heading">Contact Us</h2>
+            <p class="section-subtitle">Fill out the form and a GreenTech specialist will
+               respond within one business day.</p>
+
+            <div class="contact-grid">
+
+               <!-- Contact Form -->
+               <div>
+                  <form class="form-wrap" id="contactForm" novalidate
+                        aria-label="Contact form">
+
+                     <div class="form-group">
+                        <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="firstName" name="firstName"
+                               placeholder="Jane" aria-required="true"
+                               autocomplete="given-name">
+                        <p class="error-msg" id="firstNameError" role="alert">
+                           Please enter your first name.
+                        </p>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="lastName" name="lastName"
+                               placeholder="Smith" aria-required="true"
+                               autocomplete="family-name">
+                        <p class="error-msg" id="lastNameError" role="alert">
+                           Please enter your last name.
+                        </p>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email"
+                               placeholder="jane@yourcompany.com" aria-required="true"
+                               autocomplete="email">
+                        <p class="error-msg" id="emailError" role="alert">
+                           Please enter a valid email address.
+                        </p>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="(555) 123-4567"
+                               autocomplete="tel">
+                        <p class="error-msg" id="phoneError" role="alert">
+                           Please enter a valid phone number (digits only, 10 minimum).
+                        </p>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company"
+                               placeholder="Your Company LLC"
+                               autocomplete="organization">
+                     </div>
+
+                     <div class="form-group">
+                        <label for="interest">I'm interested in <span aria-hidden="true">*</span></label>
+                        <select id="interest" name="interest" aria-required="true">
+                           <option value="">-- Select a topic --</option>
+                           <option value="energy">Energy Products (EcoCharge, SolarPanel, SmartGrid)</option>
+                           <option value="recycling">Recycling Products (SmartSort, ComposTrack)</option>
+                           <option value="software">Software (CarbonTrack, GreenAnalytics, EcoAPI)</option>
+                           <option value="consulting">Consulting &amp; Audits</option>
+                           <option value="general">General Inquiry</option>
+                           <option value="press">Press &amp; Media</option>
+                        </select>
+                        <p class="error-msg" id="interestError" role="alert">
+                           Please select a topic.
+                        </p>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message"
+                                  placeholder="Tell us about your business and what you're looking to achieve..."
+                                  aria-required="true"></textarea>
+                        <p class="error-msg" id="messageError" role="alert">
+                           Please enter a message (at least 20 characters).
+                        </p>
+                     </div>
+
+                     <div class="form-group" style="display:flex; align-items:flex-start; gap:10px;">
+                        <input type="checkbox" id="newsletter" name="newsletter"
+                               style="width:auto; margin-top:3px; accent-color:var(--accent);">
+                        <label for="newsletter" style="font-weight:400; font-size:0.9rem; color:var(--text-light);">
+                           Sign me up for the GreenTech newsletter — sustainability tips and product updates.
+                        </label>
+                     </div>
+
+                     <button type="submit" class="btn btn-primary" id="submitBtn"
+                             style="width:100%; font-size:1rem; padding:14px;">
+                        Send Message ✉
+                     </button>
+
+                     <!-- Success Message -->
+                     <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+                        <p style="font-size:1.5rem; margin-bottom:8px;" aria-hidden="true">✅</p>
+                        <p>Thanks for reaching out! A GreenTech specialist will be in touch within one business day.</p>
+                     </div>
+
+                  </form>
+               </div>
+
+               <!-- Contact Info -->
+               <div>
+                  <h2 style="margin-bottom:24px;">Other Ways to Reach Us</h2>
+
+                  <div class="info-item">
+                     <span class="info-icon" aria-hidden="true">📧</span>
+                     <div>
+                        <h3 style="margin-bottom:2px;">Email</h3>
+                        <p style="margin:0;">
+                           <a href="mailto:info@greentechsolutions.com">
+                              info@greentechsolutions.com
+                           </a>
+                        </p>
+                        <p style="font-size:0.85rem; color:var(--text-light); margin:4px 0 0;">
+                           General inquiries &amp; support
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="info-item">
+                     <span class="info-icon" aria-hidden="true">📞</span>
+                     <div>
+                        <h3 style="margin-bottom:2px;">Phone</h3>
+                        <p style="margin:0;">
+                           <a href="tel:+15058675309">(505) 867-5309</a>
+                        </p>
+                        <p style="font-size:0.85rem; color:var(--text-light); margin:4px 0 0;">
+                           Monday–Friday, 8am–5pm MT
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="info-item">
+                     <span class="info-icon" aria-hidden="true">📍</span>
+                     <div>
+                        <h3 style="margin-bottom:2px;">Headquarters</h3>
+                        <p style="margin:0;">123 Eco Way, Suite 400</p>
+                        <p style="margin:0;">Santa Fe, NM 87501</p>
+                     </div>
+                  </div>
+
+                  <div class="info-item">
+                     <span class="info-icon" aria-hidden="true">🕐</span>
+                     <div>
+                        <h3 style="margin-bottom:2px;">Business Hours</h3>
+                        <p style="margin:0;">Monday – Friday: 8:00am – 5:00pm MT</p>
+                        <p style="margin:0;">Saturday – Sunday: Closed</p>
+                     </div>
+                  </div>
+
+                  <!-- Office Locations -->
+                  <div style="background:var(--green-pale); border-radius:10px; padding:24px; margin-top:28px;">
+                     <h3 style="color:var(--green-dark); margin-bottom:16px;">Our Office Locations</h3>
+                     <table aria-label="GreenTech office locations">
+                        <thead>
+                           <tr>
+                              <th>City</th>
+                              <th>State</th>
+                              <th>Type</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Santa Fe</td>
+                              <td>New Mexico</td>
+                              <td>Headquarters</td>
+                           </tr>
+                           <tr>
+                              <td>Austin</td>
+                              <td>Texas</td>
+                              <td>Regional Office</td>
+                           </tr>
+                           <tr>
+                              <td>Denver</td>
+                              <td>Colorado</td>
+                              <td>Regional Office</td>
+                           </tr>
+                           <tr>
+                              <td>Portland</td>
+                              <td>Oregon</td>
+                              <td>Regional Office</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section style="background-color:var(--green-pale); padding:60px 0;"
+               aria-labelledby="faq-heading">
+         <div class="content">
+            <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to the questions we hear most often.</p>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:900px; margin:0 auto;">
+
+               <div style="background:var(--white); border:1px solid var(--border);
+                           border-radius:10px; padding:24px;
+                           box-shadow:0 2px 8px rgba(27,67,50,0.07);">
+                  <h3>How long does setup take?</h3>
+                  <p style="margin:0; font-size:0.95rem;">Most hardware products are
+                     plug-and-play and can be fully operational within a single business
+                     day. Our software products are cloud-based and ready immediately
+                     after signup.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border);
+                           border-radius:10px; padding:24px;
+                           box-shadow:0 2px 8px rgba(27,67,50,0.07);">
+                  <h3>Do you offer financing?</h3>
+                  <p style="margin:0; font-size:0.95rem;">Yes — we offer 12, 24, and
+                     36-month payment plans on all hardware products. Many of our hardware
+                     products also qualify for federal and state green energy tax credits.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border);
+                           border-radius:10px; padding:24px;
+                           box-shadow:0 2px 8px rgba(27,67,50,0.07);">
+                  <h3>Is there a free trial?</h3>
+                  <p style="margin:0; font-size:0.95rem;">All software plans include a
+                     14-day free trial with no credit card required. We also offer free
+                     30-minute consultations for businesses exploring our full product suite.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border);
+                           border-radius:10px; padding:24px;
+                           box-shadow:0 2px 8px rgba(27,67,50,0.07);">
+                  <h3>What support do you offer?</h3>
+                  <p style="margin:0; font-size:0.95rem;">Every client gets a dedicated
+                     sustainability consultant plus access to our email and phone support
+                     team Monday through Friday, 8am–5pm MT.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border);
+                           border-radius:10px; padding:24px;
+                           box-shadow:0 2px 8px rgba(27,67,50,0.07);">
+                  <h3>Are your products certified?</h3>
+                  <p style="margin:0; font-size:0.95rem;">All GreenTech hardware products
+                     are Energy Star certified and meet EPA standards. Our company is also
+                     ISO 14001 and B Corp certified.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border);
+                           border-radius:10px; padding:24px;
+                           box-shadow:0 2px 8px rgba(27,67,50,0.07);">
+                  <h3>Do you ship nationwide?</h3>
+                  <p style="margin:0; font-size:0.95rem;">Yes — we ship hardware products
+                     to all 50 US states. We also have regional offices in Santa Fe,
+                     Austin, Denver, and Portland for in-person consultations.</p>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <div class="footer-grid">
+         <div class="footer-brand">
+            <h3>🌿 GreenTech Solutions</h3>
+            <p>Innovative eco-friendly technology helping businesses reduce their carbon
+               footprint and build a more sustainable future.</p>
+         </div>
+         <div class="footer-links">
+            <h4>Pages</h4>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+               <li>📧 info@greentechsolutions.com</li>
+               <li>📞 (505) 867-5309</li>
+               <li>📍 123 Eco Way, Santa Fe, NM</li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <p>&copy; 2026 GreenTech Solutions. All rights reserved. | ICT280 Final Project</p>
+      </div>
+   </footer>
+
+   <!-- Accessibility: High Contrast Toggle -->
+   <button class="contrast-toggle" id="contrastToggle" aria-label="Toggle high contrast mode">
+      ☀ High Contrast
+   </button>
+
+   <style>
+      .skip-link {
+         position: absolute;
+         top: -40px; left: 0;
+         background: var(--accent);
+         color: white;
+         padding: 8px 16px;
+         z-index: 999;
+         font-weight: 700;
+         transition: top 0.2s;
+      }
+      .skip-link:focus { top: 0; }
+
+      @media (max-width: 768px) {
+         div[style*="grid-template-columns:1fr 1fr"] {
+            grid-template-columns: 1fr !important;
+         }
+      }
+   </style>
+
+   <script src="script.js"></script>
+</body>
+</html>

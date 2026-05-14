@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us - GreenTech Solutions</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Skip to main content (accessibility) -->
+   <a href="#main" class="skip-link">Skip to main content</a>
+
+   <!-- Navigation -->
+   <nav aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Green<span>Tech</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html" class="active" aria-current="page">About</a></li>
+         <li><a href="products.html">Products</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+   </nav>
+
+   <!-- Hero -->
+   <header class="hero-sub" role="banner">
+      <h1>About GreenTech Solutions</h1>
+      <p>Founded on the belief that sustainable technology should be accessible to every business —
+         not just the Fortune 500.</p>
+   </header>
+
+   <main id="main">
+
+      <!-- Our Story -->
+      <section aria-labelledby="story-heading">
+         <div class="content">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
+               <div>
+                  <h2 id="story-heading">Our Story</h2>
+                  <p>GreenTech Solutions was founded in 2018 by a team of environmental engineers
+                     and software developers who shared a frustrating observation: the tools to
+                     fight climate change existed, but they were locked behind enterprise price
+                     tags that small and medium businesses simply couldn't afford.</p>
+                  <p>We set out to change that. Starting with a single energy monitoring device
+                     built in a garage in Santa Fe, New Mexico, we've grown into a full suite of
+                     eco-friendly technology solutions trusted by over 500 businesses across
+                     North America.</p>
+                  <p>Today, our mission remains exactly what it was on day one: make sustainability
+                     practical, affordable, and measurable for every business that wants to do better
+                     for the planet.</p>
+               </div>
+               <div style="background:var(--green-pale); border-radius:12px; padding:40px; text-align:center;">
+                  <div style="font-size:5rem; margin-bottom:16px;" aria-hidden="true">🌿</div>
+                  <h3 style="color:var(--green-dark); font-size:1.4rem; margin-bottom:10px;">
+                     "Technology and sustainability aren't opposites — they're partners."
+                  </h3>
+                  <p style="color:var(--text-light); font-style:italic; margin:0;">
+                     — Maya Chen, CEO &amp; Co-Founder
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar" aria-label="Company statistics">
+         <div class="stat">
+            <h3>2018</h3>
+            <p>Year Founded</p>
+         </div>
+         <div class="stat">
+            <h3>500+</h3>
+            <p>Business Clients</p>
+         </div>
+         <div class="stat">
+            <h3>32</h3>
+            <p>Team Members</p>
+         </div>
+         <div class="stat">
+            <h3>4</h3>
+            <p>US Office Locations</p>
+         </div>
+      </div>
+
+      <!-- Mission & Values -->
+      <section style="background-color:var(--green-pale); padding:60px 0;"
+               aria-labelledby="values-heading">
+         <div class="content">
+            <h2 class="section-title" id="values-heading">Our Values</h2>
+            <p class="section-subtitle">Everything we build and every decision we make is guided by these core principles.</p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:24px;">
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">🌎</div>
+                  <h3>Planet First</h3>
+                  <p>Every product decision starts with one question: is this better for the
+                     environment? If the answer isn't yes, we go back to the drawing board.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">🤝</div>
+                  <h3>Accessibility</h3>
+                  <p>Sustainability shouldn't be a luxury. We price our products fairly and
+                     offer flexible payment plans so any business can afford to go green.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">📊</div>
+                  <h3>Transparency</h3>
+                  <p>We publish our own carbon footprint annually and hold ourselves to the
+                     same standards we ask of our clients. No greenwashing, ever.</p>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">💡</div>
+                  <h3>Innovation</h3>
+                  <p>We invest 20% of revenue back into R&amp;D every year, ensuring our
+                     clients always have access to the most advanced eco-tech available.</p>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- Timeline -->
+      <section aria-labelledby="timeline-heading">
+         <div class="content">
+            <h2 class="section-title" id="timeline-heading">Our Journey</h2>
+            <p class="section-subtitle">Key milestones that shaped GreenTech Solutions into what it is today.</p>
+
+            <div class="timeline">
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2018</h4>
+                     <h3>Founded in Santa Fe</h3>
+                     <p>Maya Chen and James Okafor launch GreenTech from a garage
+                        with a single energy monitoring prototype.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2019</h4>
+                     <h3>First 50 Clients</h3>
+                     <p>EcoCharge Pro launches commercially. The team grows to 8
+                        people and signs first 50 paying business clients.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2020</h4>
+                     <h3>CarbonTrack Software</h3>
+                     <p>GreenTech releases its flagship carbon tracking SaaS platform,
+                        filling a critical gap for SMB compliance reporting.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2021</h4>
+                     <h3>Series A Funding</h3>
+                     <p>Raises $4.2M in Series A funding to expand the product line
+                        and open offices in Austin and Denver.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2022</h4>
+                     <h3>SmartSort 3000 Launch</h3>
+                     <p>AI-powered recycling system launches to widespread acclaim,
+                        winning the EPA Small Business Innovation Award.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2024</h4>
+                     <h3>500 Clients Milestone</h3>
+                     <p>GreenTech surpasses 500 active business clients and expands
+                        to a fourth office location in Portland, Oregon.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div class="timeline-content">
+                     <h4>2026</h4>
+                     <h3>Next Generation Platform</h3>
+                     <p>GreenTech launches its unified sustainability platform,
+                        integrating all products into one seamless dashboard.</p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- Team Section -->
+      <section style="background-color:var(--green-pale); padding:60px 0;"
+               aria-labelledby="team-heading">
+         <div class="content">
+            <h2 class="section-title" id="team-heading">Meet the Team</h2>
+            <p class="section-subtitle">The people behind GreenTech's mission to make sustainability accessible for all.</p>
+            <div class="team-grid">
+
+               <div class="team-card">
+                  <div class="team-avatar" aria-hidden="true">👩</div>
+                  <h3>Maya Chen</h3>
+                  <p>CEO &amp; Co-Founder</p>
+                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
+                     Environmental engineer with 15 years of experience in clean energy
+                     and sustainable systems design.
+                  </p>
+               </div>
+
+               <div class="team-card">
+                  <div class="team-avatar" aria-hidden="true">👨🏿</div>
+                  <h3>James Okafor</h3>
+                  <p>CTO &amp; Co-Founder</p>
+                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
+                     Software architect specializing in IoT systems and real-time
+                     environmental data processing.
+                  </p>
+               </div>
+
+               <div class="team-card">
+                  <div class="team-avatar" aria-hidden="true">👩🏽</div>
+                  <h3>Sofia Reyes</h3>
+                  <p>Head of Product</p>
+                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
+                     Former sustainability consultant who bridges the gap between
+                     client needs and engineering solutions.
+                  </p>
+               </div>
+
+               <div class="team-card">
+                  <div class="team-avatar" aria-hidden="true">👨🏻</div>
+                  <h3>Liam Park</h3>
+                  <p>Head of Sales</p>
+                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
+                     Passionate about helping SMBs adopt sustainable practices
+                     without breaking their budget.
+                  </p>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- Awards & Certifications -->
+      <section aria-labelledby="awards-heading">
+         <div class="content">
+            <h2 class="section-title" id="awards-heading">Awards &amp; Certifications</h2>
+            <p class="section-subtitle">Recognition from the organizations that matter most in environmental technology.</p>
+            <table aria-label="GreenTech awards and certifications">
+               <thead>
+                  <tr>
+                     <th>Year</th>
+                     <th>Award / Certification</th>
+                     <th>Issued By</th>
+                     <th>Category</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>2026</td>
+                     <td>Best Green Tech Startup</td>
+                     <td>TechCrunch</td>
+                     <td>Innovation</td>
+                  </tr>
+                  <tr>
+                     <td>2025</td>
+                     <td>ISO 14001 Certified</td>
+                     <td>International Organization for Standardization</td>
+                     <td>Environmental Management</td>
+                  </tr>
+                  <tr>
+                     <td>2024</td>
+                     <td>Energy Star Partner of the Year</td>
+                     <td>U.S. EPA</td>
+                     <td>Energy Efficiency</td>
+                  </tr>
+                  <tr>
+                     <td>2022</td>
+                     <td>Small Business Innovation Award</td>
+                     <td>U.S. EPA</td>
+                     <td>Sustainability</td>
+                  </tr>
+                  <tr>
+                     <td>2020</td>
+                     <td>B Corp Certified</td>
+                     <td>B Lab</td>
+                     <td>Social &amp; Environmental Performance</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </section>
+
+      <!-- CTA -->
+      <section style="background:linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+                      padding:70px 40px; text-align:center;"
+               aria-labelledby="cta-heading">
+         <h2 id="cta-heading" style="color:var(--white); font-size:2rem; margin-bottom:14px;">
+            Ready to Start Your Green Journey?
+         </h2>
+         <p style="color:#c8e6c8; max-width:500px; margin:0 auto 28px; font-size:1.05rem;">
+            Join 500+ businesses already using GreenTech to reduce their environmental
+            impact and cut energy costs.
+         </p>
+         <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="products.html" class="btn btn-primary">See Our Products</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+         </div>
+      </section>
+
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <div class="footer-grid">
+         <div class="footer-brand">
+            <h3>🌿 GreenTech Solutions</h3>
+            <p>Innovative eco-friendly technology helping businesses reduce their carbon
+               footprint and build a more sustainable future.</p>
+         </div>
+         <div class="footer-links">
+            <h4>Pages</h4>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+               <li>📧 info@greentechsolutions.com</li>
+               <li>📞 (505) 867-5309</li>
+               <li>📍 123 Eco Way, Santa Fe, NM</li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <p>&copy; 2026 GreenTech Solutions. All rights reserved. | ICT280 Final Project</p>
+      </div>
+   </footer>
+
+   <!-- Accessibility: High Contrast Toggle -->
+   <button class="contrast-toggle" id="contrastToggle" aria-label="Toggle high contrast mode">
+      ☀ High Contrast
+   </button>
+
+   <style>
+      .skip-link {
+         position: absolute;
+         top: -40px; left: 0;
+         background: var(--accent);
+         color: white;
+         padding: 8px 16px;
+         z-index: 999;
+         font-weight: 700;
+         transition: top 0.2s;
+      }
+      .skip-link:focus { top: 0; }
+
+      @media (max-width: 768px) {
+         section .content > div[style*="grid-template-columns:1fr 1fr"] {
+            grid-template-columns: 1fr !important;
+         }
+      }
+   </style>
+
+   <script src="script.js"></script>
+</body>
+</html>
