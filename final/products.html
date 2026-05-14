@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About Us - GreenTech Solutions</title>
+   <title>Products - GreenTech Solutions</title>
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,8 +21,8 @@
       </button>
       <ul class="nav-links" id="navLinks">
          <li><a href="index.html">Home</a></li>
-         <li><a href="about.html" class="active" aria-current="page">About</a></li>
-         <li><a href="products.html">Products</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="products.html" class="active" aria-current="page">Products</a></li>
          <li><a href="blog.html">Blog</a></li>
          <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -30,286 +30,320 @@
 
    <!-- Hero -->
    <header class="hero-sub" role="banner">
-      <h1>About GreenTech Solutions</h1>
-      <p>Founded on the belief that sustainable technology should be accessible to every business —
-         not just the Fortune 500.</p>
+      <h1>Our Products &amp; Services</h1>
+      <p>Eco-friendly technology solutions designed to help your business reduce its
+         carbon footprint — without reducing your bottom line.</p>
    </header>
 
    <main id="main">
 
-      <!-- Our Story -->
-      <section aria-labelledby="story-heading">
+      <!-- Search + Filter -->
+      <section aria-labelledby="catalog-heading">
          <div class="content">
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
-               <div>
-                  <h2 id="story-heading">Our Story</h2>
-                  <p>GreenTech Solutions was founded in 2018 by a team of environmental engineers
-                     and software developers who shared a frustrating observation: the tools to
-                     fight climate change existed, but they were locked behind enterprise price
-                     tags that small and medium businesses simply couldn't afford.</p>
-                  <p>We set out to change that. Starting with a single energy monitoring device
-                     built in a garage in Santa Fe, New Mexico, we've grown into a full suite of
-                     eco-friendly technology solutions trusted by over 500 businesses across
-                     North America.</p>
-                  <p>Today, our mission remains exactly what it was on day one: make sustainability
-                     practical, affordable, and measurable for every business that wants to do better
-                     for the planet.</p>
-               </div>
-               <div style="background:var(--green-pale); border-radius:12px; padding:40px; text-align:center;">
-                  <div style="font-size:5rem; margin-bottom:16px;" aria-hidden="true">🌿</div>
-                  <h3 style="color:var(--green-dark); font-size:1.4rem; margin-bottom:10px;">
-                     "Technology and sustainability aren't opposites — they're partners."
-                  </h3>
-                  <p style="color:var(--text-light); font-style:italic; margin:0;">
-                     — Maya Chen, CEO &amp; Co-Founder
-                  </p>
-               </div>
+            <h2 class="section-title" id="catalog-heading">Product Catalog</h2>
+            <p class="section-subtitle">Browse all GreenTech products or filter by category.</p>
+
+            <!-- Search Bar -->
+            <div style="text-align:center; margin-bottom:24px;">
+               <label for="productSearch" class="sr-only">Search products</label>
+               <input type="text" id="productSearch" placeholder="🔍  Search products..."
+                      aria-label="Search products"
+                      style="padding:11px 18px; border:2px solid var(--border); border-radius:24px;
+                             font-family:'Open Sans',sans-serif; font-size:1rem; width:100%;
+                             max-width:420px; outline:none; transition:border-color 0.2s;"
+                      onfocus="this.style.borderColor='var(--accent)'"
+                      onblur="this.style.borderColor='var(--border)'">
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar" role="group" aria-label="Filter products by category">
+               <button class="filter-btn active" data-filter="all" aria-pressed="true">All Products</button>
+               <button class="filter-btn" data-filter="energy" aria-pressed="false">⚡ Energy</button>
+               <button class="filter-btn" data-filter="recycling" aria-pressed="false">♻️ Recycling</button>
+               <button class="filter-btn" data-filter="software" aria-pressed="false">💻 Software</button>
+               <button class="filter-btn" data-filter="consulting" aria-pressed="false">🤝 Consulting</button>
+            </div>
+
+            <!-- No results message -->
+            <p id="noResults" style="display:none; text-align:center; color:var(--text-light);
+               font-size:1.05rem; margin-bottom:24px;" aria-live="polite">
+               No products match your search. Try a different term or category.
+            </p>
+
+            <!-- Product Cards -->
+            <div class="card-grid" id="productGrid" aria-label="Product listing">
+
+               <!-- Energy Products -->
+               <article class="card product-card" data-category="energy" data-name="ecocharge pro">
+                  <div class="card-img-placeholder" aria-hidden="true">⚡</div>
+                  <div class="card-body">
+                     <span class="card-tag">Energy</span>
+                     <h3>EcoCharge Pro</h3>
+                     <p>Ultra-efficient device charging stations that reduce energy consumption
+                        by up to 60% compared to standard chargers. Ideal for offices with
+                        10–200 employees.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Supports up to 20 devices simultaneously</li>
+                        <li>Real-time energy usage dashboard</li>
+                        <li>Energy Star certified</li>
+                     </ul>
+                     <p class="card-price">$299 / unit</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Request a Quote
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="energy" data-name="solarpanel lite">
+                  <div class="card-img-placeholder" aria-hidden="true">☀️</div>
+                  <div class="card-body">
+                     <span class="card-tag">Energy</span>
+                     <h3>SolarPanel Lite</h3>
+                     <p>Compact, modular solar panel kits designed for commercial rooftops.
+                        Plug-and-play installation with no structural modifications required
+                        for most flat-roof buildings.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Generates up to 5kW per kit</li>
+                        <li>25-year panel lifespan guarantee</li>
+                        <li>Federal tax credit eligible</li>
+                     </ul>
+                     <p class="card-price">$2,499 / kit</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Request a Quote
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="energy" data-name="smartgrid monitor">
+                  <div class="card-img-placeholder" aria-hidden="true">📡</div>
+                  <div class="card-body">
+                     <span class="card-tag">Energy</span>
+                     <h3>SmartGrid Monitor</h3>
+                     <p>Real-time electricity monitoring hardware that identifies energy waste
+                        across your facility. Pinpoints which equipment is drawing the most
+                        power and when.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Monitors up to 50 circuits</li>
+                        <li>Integrates with CarbonTrack software</li>
+                        <li>Alerts for abnormal energy spikes</li>
+                     </ul>
+                     <p class="card-price">$799 / unit</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Request a Quote
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Recycling Products -->
+               <article class="card product-card" data-category="recycling" data-name="smartsort 3000">
+                  <div class="card-img-placeholder" aria-hidden="true">♻️</div>
+                  <div class="card-body">
+                     <span class="card-tag">Recycling</span>
+                     <h3>SmartSort 3000</h3>
+                     <p>AI-powered recycling bins that automatically sort materials — paper,
+                        plastic, glass, and compost — and generate monthly waste reduction
+                        reports for your business.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>99.2% sorting accuracy</li>
+                        <li>EPA award-winning technology</li>
+                        <li>Automated compliance reporting</li>
+                     </ul>
+                     <p class="card-price">$1,499 / system</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Request a Quote
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="recycling" data-name="compostrack bin">
+                  <div class="card-img-placeholder" aria-hidden="true">🌱</div>
+                  <div class="card-body">
+                     <span class="card-tag">Recycling</span>
+                     <h3>ComposTrack Bin</h3>
+                     <p>Smart composting bins with built-in weight sensors and odor control.
+                        Tracks compost volume over time and schedules automated pickup
+                        through our partner network.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Handles up to 50 lbs of waste per day</li>
+                        <li>Odor-neutralizing technology</li>
+                        <li>Automated pickup scheduling</li>
+                     </ul>
+                     <p class="card-price">$349 / unit</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Request a Quote
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Software Products -->
+               <article class="card product-card" data-category="software" data-name="carbontrack">
+                  <div class="card-img-placeholder" aria-hidden="true">🌍</div>
+                  <div class="card-body">
+                     <span class="card-tag">Software</span>
+                     <h3>CarbonTrack</h3>
+                     <p>Cloud-based carbon footprint tracking software with real-time
+                        dashboards, automated EPA and ISO compliance reporting, and
+                        reduction goal setting for your entire organization.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Tracks Scope 1, 2, and 3 emissions</li>
+                        <li>One-click compliance report export</li>
+                        <li>14-day free trial available</li>
+                     </ul>
+                     <p class="card-price">$49 / month</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Start Free Trial
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="software" data-name="greenanalytics dashboard">
+                  <div class="card-img-placeholder" aria-hidden="true">📊</div>
+                  <div class="card-body">
+                     <span class="card-tag">Software</span>
+                     <h3>GreenAnalytics Dashboard</h3>
+                     <p>Unified sustainability analytics platform that consolidates data
+                        from all your GreenTech hardware into a single, easy-to-read
+                        executive dashboard.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Integrates with all GreenTech hardware</li>
+                        <li>Custom KPI tracking and alerts</li>
+                        <li>Shareable stakeholder reports</li>
+                     </ul>
+                     <p class="card-price">$79 / month</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Start Free Trial
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="software" data-name="ecoapi developer">
+                  <div class="card-img-placeholder" aria-hidden="true">🔌</div>
+                  <div class="card-body">
+                     <span class="card-tag">Software</span>
+                     <h3>EcoAPI Developer</h3>
+                     <p>RESTful API access to all GreenTech data streams, allowing
+                        businesses to integrate sustainability metrics directly into
+                        their own internal tools and dashboards.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Full REST API with documentation</li>
+                        <li>Webhook support for real-time events</li>
+                        <li>Up to 100,000 requests/month included</li>
+                     </ul>
+                     <p class="card-price">$129 / month</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Request Access
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Consulting -->
+               <article class="card product-card" data-category="consulting" data-name="sustainability audit">
+                  <div class="card-img-placeholder" aria-hidden="true">📋</div>
+                  <div class="card-body">
+                     <span class="card-tag">Consulting</span>
+                     <h3>Sustainability Audit</h3>
+                     <p>A comprehensive on-site audit of your business operations conducted
+                        by a certified GreenTech sustainability consultant. Includes a
+                        detailed action plan and product recommendations.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Full facility energy assessment</li>
+                        <li>Waste stream analysis</li>
+                        <li>Written action plan with ROI projections</li>
+                     </ul>
+                     <p class="card-price">$999 / engagement</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Book a Consult
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="consulting" data-name="green certification prep">
+                  <div class="card-img-placeholder" aria-hidden="true">🏆</div>
+                  <div class="card-body">
+                     <span class="card-tag">Consulting</span>
+                     <h3>Green Certification Prep</h3>
+                     <p>Guided preparation service for businesses pursuing B Corp, LEED,
+                        or ISO 14001 certifications. Our consultants handle documentation,
+                        audits, and submission support.</p>
+                     <ul style="font-size:0.88rem; margin-bottom:14px;">
+                        <li>Covers B Corp, LEED, ISO 14001</li>
+                        <li>End-to-end documentation support</li>
+                        <li>Average certification time: 90 days</li>
+                     </ul>
+                     <p class="card-price">From $2,499</p>
+                     <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">
+                        Book a Consult
+                     </a>
+                  </div>
+               </article>
+
             </div>
          </div>
       </section>
 
-      <!-- Stats Bar -->
-      <div class="stats-bar" aria-label="Company statistics">
-         <div class="stat">
-            <h3>2018</h3>
-            <p>Year Founded</p>
-         </div>
-         <div class="stat">
-            <h3>500+</h3>
-            <p>Business Clients</p>
-         </div>
-         <div class="stat">
-            <h3>32</h3>
-            <p>Team Members</p>
-         </div>
-         <div class="stat">
-            <h3>4</h3>
-            <p>US Office Locations</p>
-         </div>
-      </div>
-
-      <!-- Mission & Values -->
+      <!-- Pricing Comparison Table -->
       <section style="background-color:var(--green-pale); padding:60px 0;"
-               aria-labelledby="values-heading">
+               aria-labelledby="pricing-heading">
          <div class="content">
-            <h2 class="section-title" id="values-heading">Our Values</h2>
-            <p class="section-subtitle">Everything we build and every decision we make is guided by these core principles.</p>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:24px;">
-
-               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
-                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
-                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">🌎</div>
-                  <h3>Planet First</h3>
-                  <p>Every product decision starts with one question: is this better for the
-                     environment? If the answer isn't yes, we go back to the drawing board.</p>
-               </div>
-
-               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
-                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
-                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">🤝</div>
-                  <h3>Accessibility</h3>
-                  <p>Sustainability shouldn't be a luxury. We price our products fairly and
-                     offer flexible payment plans so any business can afford to go green.</p>
-               </div>
-
-               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
-                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
-                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">📊</div>
-                  <h3>Transparency</h3>
-                  <p>We publish our own carbon footprint annually and hold ourselves to the
-                     same standards we ask of our clients. No greenwashing, ever.</p>
-               </div>
-
-               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
-                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
-                  <div style="font-size:2.2rem; margin-bottom:12px;" aria-hidden="true">💡</div>
-                  <h3>Innovation</h3>
-                  <p>We invest 20% of revenue back into R&amp;D every year, ensuring our
-                     clients always have access to the most advanced eco-tech available.</p>
-               </div>
-
-            </div>
-         </div>
-      </section>
-
-      <!-- Timeline -->
-      <section aria-labelledby="timeline-heading">
-         <div class="content">
-            <h2 class="section-title" id="timeline-heading">Our Journey</h2>
-            <p class="section-subtitle">Key milestones that shaped GreenTech Solutions into what it is today.</p>
-
-            <div class="timeline">
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2018</h4>
-                     <h3>Founded in Santa Fe</h3>
-                     <p>Maya Chen and James Okafor launch GreenTech from a garage
-                        with a single energy monitoring prototype.</p>
-                  </div>
-               </div>
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2019</h4>
-                     <h3>First 50 Clients</h3>
-                     <p>EcoCharge Pro launches commercially. The team grows to 8
-                        people and signs first 50 paying business clients.</p>
-                  </div>
-               </div>
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2020</h4>
-                     <h3>CarbonTrack Software</h3>
-                     <p>GreenTech releases its flagship carbon tracking SaaS platform,
-                        filling a critical gap for SMB compliance reporting.</p>
-                  </div>
-               </div>
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2021</h4>
-                     <h3>Series A Funding</h3>
-                     <p>Raises $4.2M in Series A funding to expand the product line
-                        and open offices in Austin and Denver.</p>
-                  </div>
-               </div>
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2022</h4>
-                     <h3>SmartSort 3000 Launch</h3>
-                     <p>AI-powered recycling system launches to widespread acclaim,
-                        winning the EPA Small Business Innovation Award.</p>
-                  </div>
-               </div>
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2024</h4>
-                     <h3>500 Clients Milestone</h3>
-                     <p>GreenTech surpasses 500 active business clients and expands
-                        to a fourth office location in Portland, Oregon.</p>
-                  </div>
-               </div>
-
-               <div class="timeline-item">
-                  <div class="timeline-dot" aria-hidden="true"></div>
-                  <div class="timeline-content">
-                     <h4>2026</h4>
-                     <h3>Next Generation Platform</h3>
-                     <p>GreenTech launches its unified sustainability platform,
-                        integrating all products into one seamless dashboard.</p>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </section>
-
-      <!-- Team Section -->
-      <section style="background-color:var(--green-pale); padding:60px 0;"
-               aria-labelledby="team-heading">
-         <div class="content">
-            <h2 class="section-title" id="team-heading">Meet the Team</h2>
-            <p class="section-subtitle">The people behind GreenTech's mission to make sustainability accessible for all.</p>
-            <div class="team-grid">
-
-               <div class="team-card">
-                  <div class="team-avatar" aria-hidden="true">👩</div>
-                  <h3>Maya Chen</h3>
-                  <p>CEO &amp; Co-Founder</p>
-                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
-                     Environmental engineer with 15 years of experience in clean energy
-                     and sustainable systems design.
-                  </p>
-               </div>
-
-               <div class="team-card">
-                  <div class="team-avatar" aria-hidden="true">👨🏿</div>
-                  <h3>James Okafor</h3>
-                  <p>CTO &amp; Co-Founder</p>
-                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
-                     Software architect specializing in IoT systems and real-time
-                     environmental data processing.
-                  </p>
-               </div>
-
-               <div class="team-card">
-                  <div class="team-avatar" aria-hidden="true">👩🏽</div>
-                  <h3>Sofia Reyes</h3>
-                  <p>Head of Product</p>
-                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
-                     Former sustainability consultant who bridges the gap between
-                     client needs and engineering solutions.
-                  </p>
-               </div>
-
-               <div class="team-card">
-                  <div class="team-avatar" aria-hidden="true">👨🏻</div>
-                  <h3>Liam Park</h3>
-                  <p>Head of Sales</p>
-                  <p style="margin-top:10px; font-size:0.85rem; color:var(--text-light);">
-                     Passionate about helping SMBs adopt sustainable practices
-                     without breaking their budget.
-                  </p>
-               </div>
-
-            </div>
-         </div>
-      </section>
-
-      <!-- Awards & Certifications -->
-      <section aria-labelledby="awards-heading">
-         <div class="content">
-            <h2 class="section-title" id="awards-heading">Awards &amp; Certifications</h2>
-            <p class="section-subtitle">Recognition from the organizations that matter most in environmental technology.</p>
-            <table aria-label="GreenTech awards and certifications">
+            <h2 class="section-title" id="pricing-heading">Software Plan Comparison</h2>
+            <p class="section-subtitle">All plans include a 14-day free trial. No credit card required.</p>
+            <table aria-label="Software pricing plan comparison">
                <thead>
                   <tr>
-                     <th>Year</th>
-                     <th>Award / Certification</th>
-                     <th>Issued By</th>
-                     <th>Category</th>
+                     <th>Feature</th>
+                     <th>CarbonTrack ($49/mo)</th>
+                     <th>GreenAnalytics ($79/mo)</th>
+                     <th>EcoAPI ($129/mo)</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
-                     <td>2026</td>
-                     <td>Best Green Tech Startup</td>
-                     <td>TechCrunch</td>
-                     <td>Innovation</td>
+                     <td>Carbon Footprint Tracking</td>
+                     <td>✅</td>
+                     <td>✅</td>
+                     <td>✅</td>
                   </tr>
                   <tr>
-                     <td>2025</td>
-                     <td>ISO 14001 Certified</td>
-                     <td>International Organization for Standardization</td>
-                     <td>Environmental Management</td>
+                     <td>Compliance Report Export</td>
+                     <td>✅</td>
+                     <td>✅</td>
+                     <td>✅</td>
                   </tr>
                   <tr>
-                     <td>2024</td>
-                     <td>Energy Star Partner of the Year</td>
-                     <td>U.S. EPA</td>
-                     <td>Energy Efficiency</td>
+                     <td>Hardware Integration</td>
+                     <td>Basic</td>
+                     <td>✅ Full</td>
+                     <td>✅ Full</td>
                   </tr>
                   <tr>
-                     <td>2022</td>
-                     <td>Small Business Innovation Award</td>
-                     <td>U.S. EPA</td>
-                     <td>Sustainability</td>
+                     <td>Executive Dashboard</td>
+                     <td>❌</td>
+                     <td>✅</td>
+                     <td>✅</td>
                   </tr>
                   <tr>
-                     <td>2020</td>
-                     <td>B Corp Certified</td>
-                     <td>B Lab</td>
-                     <td>Social &amp; Environmental Performance</td>
+                     <td>Custom KPI Tracking</td>
+                     <td>❌</td>
+                     <td>✅</td>
+                     <td>✅</td>
+                  </tr>
+                  <tr>
+                     <td>API Access</td>
+                     <td>❌</td>
+                     <td>❌</td>
+                     <td>✅</td>
+                  </tr>
+                  <tr>
+                     <td>Webhook Support</td>
+                     <td>❌</td>
+                     <td>❌</td>
+                     <td>✅</td>
+                  </tr>
+                  <tr>
+                     <td>Priority Support</td>
+                     <td>❌</td>
+                     <td>✅</td>
+                     <td>✅</td>
                   </tr>
                </tbody>
             </table>
@@ -321,16 +355,13 @@
                       padding:70px 40px; text-align:center;"
                aria-labelledby="cta-heading">
          <h2 id="cta-heading" style="color:var(--white); font-size:2rem; margin-bottom:14px;">
-            Ready to Start Your Green Journey?
+            Not Sure Which Product Is Right for You?
          </h2>
          <p style="color:#c8e6c8; max-width:500px; margin:0 auto 28px; font-size:1.05rem;">
-            Join 500+ businesses already using GreenTech to reduce their environmental
-            impact and cut energy costs.
+            Book a free 30-minute consultation with a GreenTech sustainability expert
+            and we'll build a custom plan for your business.
          </p>
-         <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-            <a href="products.html" class="btn btn-primary">See Our Products</a>
-            <a href="contact.html" class="btn btn-outline">Contact Us</a>
-         </div>
+         <a href="contact.html" class="btn btn-primary">Book a Free Consultation</a>
       </section>
 
    </main>
@@ -384,11 +415,14 @@
          transition: top 0.2s;
       }
       .skip-link:focus { top: 0; }
-
-      @media (max-width: 768px) {
-         section .content > div[style*="grid-template-columns:1fr 1fr"] {
-            grid-template-columns: 1fr !important;
-         }
+      .sr-only {
+         position: absolute;
+         width: 1px; height: 1px;
+         padding: 0; margin: -1px;
+         overflow: hidden;
+         clip: rect(0,0,0,0);
+         white-space: nowrap;
+         border: 0;
       }
    </style>
 
