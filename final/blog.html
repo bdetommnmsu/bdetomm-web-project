@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog & Resources - GreenTech Solutions</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Skip to main content (accessibility) -->
+   <a href="#main" class="skip-link">Skip to main content</a>
+
+   <!-- Navigation -->
+   <nav aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Green<span>Tech</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="products.html">Products</a></li>
+         <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+   </nav>
+
+   <!-- Hero -->
+   <header class="hero-sub" role="banner">
+      <h1>Blog &amp; Resources</h1>
+      <p>Practical guides, industry news, and sustainability tips to help your
+         business go greener — written by our team of eco-tech experts.</p>
+   </header>
+
+   <main id="main">
+
+      <!-- Featured Article -->
+      <section aria-labelledby="featured-heading">
+         <div class="content">
+            <h2 class="section-title" id="featured-heading">Featured Article</h2>
+            <article style="background:var(--white); border:1px solid var(--border); border-radius:12px;
+                            overflow:hidden; box-shadow:0 4px 16px rgba(27,67,50,0.1);
+                            display:grid; grid-template-columns:1fr 1fr; gap:0;"
+                     aria-label="Featured article">
+               <div style="background:var(--green-pale); display:flex; align-items:center;
+                           justify-content:center; font-size:6rem; padding:40px;"
+                    aria-hidden="true">🌿</div>
+               <div style="padding:40px;">
+                  <span class="card-tag">Featured &bull; Guide</span>
+                  <p class="blog-meta">May 1, 2026 &bull; 8 min read &bull; By Maya Chen</p>
+                  <h3 style="font-size:1.5rem; color:var(--green-dark); margin-bottom:12px;">
+                     10 Ways to Reduce Your Business Carbon Footprint in 2026
+                  </h3>
+                  <p>Climate action doesn't have to mean massive capital investment.
+                     Whether you run a 5-person shop or a 200-person office, there are
+                     practical, affordable steps you can take right now to start making
+                     a measurable difference. We break down ten of the most impactful
+                     changes any SMB can implement — many at zero cost.</p>
+                  <ol style="margin:14px 0 20px 20px; font-size:0.93rem;">
+                     <li>Switch to LED lighting throughout your facility</li>
+                     <li>Implement a remote work policy to cut commuter emissions</li>
+                     <li>Audit your energy usage with a smart monitor</li>
+                     <li>Start a workplace recycling and composting program</li>
+                     <li>Switch to renewable energy through your utility provider</li>
+                  </ol>
+                  <a href="#article1" class="btn btn-primary">Read Full Article</a>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Blog Filter -->
+      <section style="background-color:var(--green-pale); padding:60px 0;"
+               aria-labelledby="articles-heading">
+         <div class="content">
+            <h2 class="section-title" id="articles-heading">All Articles</h2>
+            <p class="section-subtitle">Browse by topic or read them all.</p>
+
+            <div class="filter-bar" role="group" aria-label="Filter articles by category">
+               <button class="filter-btn active" data-filter="all" aria-pressed="true">All Topics</button>
+               <button class="filter-btn" data-filter="guide" aria-pressed="false">📖 Guides</button>
+               <button class="filter-btn" data-filter="technology" aria-pressed="false">💡 Technology</button>
+               <button class="filter-btn" data-filter="compliance" aria-pressed="false">📋 Compliance</button>
+               <button class="filter-btn" data-filter="tips" aria-pressed="false">✅ Tips</button>
+            </div>
+
+            <div class="card-grid" id="blogGrid">
+
+               <article class="card product-card" data-category="guide" id="article1">
+                  <div class="card-img-placeholder" aria-hidden="true">🌿</div>
+                  <div class="card-body">
+                     <span class="card-tag">Guide</span>
+                     <p class="blog-meta">May 1, 2026 &bull; 8 min read</p>
+                     <h3>10 Ways to Reduce Your Business Carbon Footprint in 2026</h3>
+                     <p>Practical, cost-effective steps any SMB can take today to start
+                        making a measurable environmental difference — from LED lighting
+                        to remote work policies.</p>
+                     <a href="#article1" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="technology">
+                  <div class="card-img-placeholder" aria-hidden="true">💡</div>
+                  <div class="card-body">
+                     <span class="card-tag">Technology</span>
+                     <p class="blog-meta">April 18, 2026 &bull; 4 min read</p>
+                     <h3>How AI Is Transforming Waste Management for Small Businesses</h3>
+                     <p>A deep dive into the smart sorting technology behind SmartSort 3000
+                        and what AI-powered recycling means for the future of business
+                        waste management.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="compliance">
+                  <div class="card-img-placeholder" aria-hidden="true">📋</div>
+                  <div class="card-body">
+                     <span class="card-tag">Compliance</span>
+                     <p class="blog-meta">April 5, 2026 &bull; 6 min read</p>
+                     <h3>EPA 2026 Updates: What SMBs Need to Know</h3>
+                     <p>Breaking down the latest EPA environmental regulations and reporting
+                        requirements — and how automated tools can keep your business
+                        compliant without the headache.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="tips">
+                  <div class="card-img-placeholder" aria-hidden="true">☀️</div>
+                  <div class="card-body">
+                     <span class="card-tag">Tips</span>
+                     <p class="blog-meta">March 22, 2026 &bull; 3 min read</p>
+                     <h3>5 Quick Wins for Office Energy Efficiency This Week</h3>
+                     <p>You don't need a big budget to make a big impact. These five
+                        changes can be implemented in a single afternoon and will start
+                        saving energy immediately.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="technology">
+                  <div class="card-img-placeholder" aria-hidden="true">📊</div>
+                  <div class="card-body">
+                     <span class="card-tag">Technology</span>
+                     <p class="blog-meta">March 10, 2026 &bull; 5 min read</p>
+                     <h3>What Is Scope 3 Emissions Tracking — and Why It Matters</h3>
+                     <p>Most businesses track direct emissions, but Scope 3 — your supply
+                        chain and downstream impacts — often accounts for 70% or more of
+                        your total carbon footprint.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="guide">
+                  <div class="card-img-placeholder" aria-hidden="true">🏆</div>
+                  <div class="card-body">
+                     <span class="card-tag">Guide</span>
+                     <p class="blog-meta">February 28, 2026 &bull; 10 min read</p>
+                     <h3>The Complete Guide to Getting B Corp Certified in 2026</h3>
+                     <p>B Corp certification signals to customers, investors, and partners
+                        that your business meets the highest standards of social and
+                        environmental performance. Here's exactly how to get there.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="compliance">
+                  <div class="card-img-placeholder" aria-hidden="true">📄</div>
+                  <div class="card-body">
+                     <span class="card-tag">Compliance</span>
+                     <p class="blog-meta">February 14, 2026 &bull; 7 min read</p>
+                     <h3>ISO 14001 Explained: A Plain-English Guide for Business Owners</h3>
+                     <p>ISO 14001 is the world's most recognized environmental management
+                        standard — but what does it actually require, and is it worth
+                        pursuing for your business?</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="tips">
+                  <div class="card-img-placeholder" aria-hidden="true">🔋</div>
+                  <div class="card-body">
+                     <span class="card-tag">Tips</span>
+                     <p class="blog-meta">January 30, 2026 &bull; 4 min read</p>
+                     <h3>How to Build a Green Culture Your Employees Actually Embrace</h3>
+                     <p>Sustainability initiatives fail when they're top-down mandates.
+                        Here's how to get your whole team genuinely excited about going
+                        green — and keep that momentum going.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card product-card" data-category="technology">
+                  <div class="card-img-placeholder" aria-hidden="true">🌐</div>
+                  <div class="card-body">
+                     <span class="card-tag">Technology</span>
+                     <p class="blog-meta">January 15, 2026 &bull; 6 min read</p>
+                     <h3>IoT and Sustainability: How Connected Devices Are Changing Business</h3>
+                     <p>The Internet of Things isn't just a tech buzzword — for sustainability,
+                        connected devices are generating the real-time data businesses need to
+                        make smarter environmental decisions.</p>
+                     <a href="#" class="btn btn-primary" style="display:block; text-align:center;">
+                        Read Article
+                     </a>
+                  </div>
+               </article>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- Resources Section -->
+      <section aria-labelledby="resources-heading">
+         <div class="content">
+            <h2 class="section-title" id="resources-heading">Free Resources</h2>
+            <p class="section-subtitle">Downloadable guides and tools to accelerate your sustainability journey.</p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:24px;">
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.5rem; margin-bottom:12px;" aria-hidden="true">📥</div>
+                  <h3>Carbon Footprint Calculator</h3>
+                  <p>A free Excel template to calculate your business's annual carbon
+                     footprint across Scope 1, 2, and 3 emissions.</p>
+                  <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center; margin-top:14px;">
+                     Download Free
+                  </a>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.5rem; margin-bottom:12px;" aria-hidden="true">📘</div>
+                  <h3>SMB Sustainability Starter Kit</h3>
+                  <p>A 20-page guide covering everything a small business needs to know
+                     to launch a successful sustainability program from scratch.</p>
+                  <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center; margin-top:14px;">
+                     Download Free
+                  </a>
+               </div>
+
+               <div style="background:var(--white); border:1px solid var(--border); border-radius:10px;
+                           padding:28px; box-shadow:0 2px 10px rgba(27,67,50,0.07);">
+                  <div style="font-size:2.5rem; margin-bottom:12px;" aria-hidden="true">✅</div>
+                  <h3>Green Office Checklist</h3>
+                  <p>A printable 50-point checklist covering energy, waste, water, supply
+                     chain, and employee engagement — perfect for a quarterly review.</p>
+                  <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center; margin-top:14px;">
+                     Download Free
+                  </a>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- External Resources Table -->
+      <section style="background-color:var(--green-pale); padding:60px 0;"
+               aria-labelledby="external-heading">
+         <div class="content">
+            <h2 class="section-title" id="external-heading">Trusted External Resources</h2>
+            <p class="section-subtitle">Authoritative sources we recommend for staying informed on sustainability.</p>
+            <table aria-label="External sustainability resources">
+               <thead>
+                  <tr>
+                     <th>Organization</th>
+                     <th>Resource</th>
+                     <th>Topic</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>U.S. Environmental Protection Agency</td>
+                     <td><a href="https://www.epa.gov/smm" target="_blank"
+                            rel="noopener noreferrer">Sustainable Materials Management</a></td>
+                     <td>Waste &amp; Recycling</td>
+                  </tr>
+                  <tr>
+                     <td>Energy Star</td>
+                     <td><a href="https://www.energystar.gov/buildings/facility-owners-and-managers/small-business"
+                            target="_blank" rel="noopener noreferrer">Small Business Energy Efficiency</a></td>
+                     <td>Energy Savings</td>
+                  </tr>
+                  <tr>
+                     <td>B Lab</td>
+                     <td><a href="https://www.bcorporation.net" target="_blank"
+                            rel="noopener noreferrer">B Corp Certification</a></td>
+                     <td>Certification</td>
+                  </tr>
+                  <tr>
+                     <td>ISO</td>
+                     <td><a href="https://www.iso.org/iso-14001-environmental-management.html"
+                            target="_blank" rel="noopener noreferrer">ISO 14001 Standard</a></td>
+                     <td>Environmental Management</td>
+                  </tr>
+                  <tr>
+                     <td>UN Environment Programme</td>
+                     <td><a href="https://www.unep.org/resources/toolkits-manuals-and-guides"
+                            target="_blank" rel="noopener noreferrer">Sustainability Toolkits</a></td>
+                     <td>Global Sustainability</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </section>
+
+      <!-- Newsletter CTA -->
+      <section style="background:linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+                      padding:70px 40px; text-align:center;"
+               aria-labelledby="newsletter-heading">
+         <h2 id="newsletter-heading" style="color:var(--white); font-size:2rem; margin-bottom:14px;">
+            Never Miss an Article
+         </h2>
+         <p style="color:#c8e6c8; max-width:480px; margin:0 auto 28px; font-size:1.05rem;">
+            Subscribe to the GreenTech newsletter and get new articles, free resources,
+            and product updates delivered straight to your inbox.
+         </p>
+         <a href="contact.html" class="btn btn-primary">Subscribe Now</a>
+      </section>
+
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <div class="footer-grid">
+         <div class="footer-brand">
+            <h3>🌿 GreenTech Solutions</h3>
+            <p>Innovative eco-friendly technology helping businesses reduce their carbon
+               footprint and build a more sustainable future.</p>
+         </div>
+         <div class="footer-links">
+            <h4>Pages</h4>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+               <li>📧 info@greentechsolutions.com</li>
+               <li>📞 (505) 867-5309</li>
+               <li>📍 123 Eco Way, Santa Fe, NM</li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <p>&copy; 2026 GreenTech Solutions. All rights reserved. | ICT280 Final Project</p>
+      </div>
+   </footer>
+
+   <!-- Accessibility: High Contrast Toggle -->
+   <button class="contrast-toggle" id="contrastToggle" aria-label="Toggle high contrast mode">
+      ☀ High Contrast
+   </button>
+
+   <style>
+      .skip-link {
+         position: absolute;
+         top: -40px; left: 0;
+         background: var(--accent);
+         color: white;
+         padding: 8px 16px;
+         z-index: 999;
+         font-weight: 700;
+         transition: top 0.2s;
+      }
+      .skip-link:focus { top: 0; }
+
+      @media (max-width: 768px) {
+         article[style*="grid-template-columns:1fr 1fr"] {
+            grid-template-columns: 1fr !important;
+         }
+      }
+   </style>
+
+   <script src="script.js"></script>
+</body>
+</html>

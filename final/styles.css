@@ -728,7 +728,10 @@ footer {
 }
 
 .footer-links ul { list-style: none; margin: 0; padding: 0; }
-.footer-links li { margin-bottom: 8px; }
+.footer-links li {
+   color: #a8d5b5;
+   font-size: 0.9rem;
+}
 .footer-links a  { color: #a8d5b5; font-size: 0.9rem; }
 .footer-links a:hover { color: var(--green-light); }
 
