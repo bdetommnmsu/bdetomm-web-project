@@ -236,6 +236,8 @@ All code was reviewed, tested, troubleshot, and deployed by the student. The stu
 **Citation (APA format):**
 Anthropic. (2026). *Claude* (claude-sonnet-4-6) [Large language model]. https://claude.ai
 
+* This project has inspired me to work on future personal website projects to learn more and help reinforce learned framework concepts.
+
 ---
 
 *ICT280 Web Programming | New Mexico State University | Spring 2026*
