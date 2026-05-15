@@ -12,12 +12,12 @@ const destinations = {
          "You're a wilderness adventurer at heart! Alaska is your perfect match. " +
          "With its jaw-dropping national parks, towering glaciers, and incredible wildlife, " +
          "Alaska offers a scale of nature that simply can't be found anywhere else. " +
-         "I've been there myself — standing in Denali National Park with mountains " +
+         "I've been there myself - standing in Denali National Park with mountains " +
          "stretching endlessly in every direction is something you'll never forget.",
       tips: [
          "Visit between June and August for the best weather and longest daylight hours",
-         "Book national park tours and cruises well in advance — they sell out fast",
-         "Pack layers — temperatures can shift dramatically throughout the day",
+         "Book national park tours and cruises well in advance - they sell out fast",
+         "Pack layers - temperatures can shift dramatically throughout the day",
          "Don't miss Kenai Fjords for glacier and wildlife boat tours"
       ]
    },
@@ -27,11 +27,11 @@ const destinations = {
       description:
          "You're a beach lover who needs to recharge in paradise! The Caribbean is calling " +
          "your name. Turquoise water, powdery white sand, fresh seafood, and a laid-back island " +
-         "vibe — the Caribbean is pure bliss. Whether you pick Jamaica, the Bahamas, or the " +
+         "vibe - the Caribbean is pure bliss. Whether you pick Jamaica, the Bahamas, or the " +
          "Virgin Islands, you're in for an unforgettable escape.",
       tips: [
          "Visit December through April to avoid hurricane season",
-         "Try the local cuisine — jerk chicken, conch fritters, and fresh fish are must-haves",
+         "Try the local cuisine - jerk chicken, conch fritters, and fresh fish are must-haves",
          "Book a snorkeling or diving excursion to explore the reefs",
          "Look for all-inclusive resorts to keep costs predictable"
       ]
@@ -41,7 +41,7 @@ const destinations = {
       emoji: "🌆",
       description:
          "You're an urban explorer who thrives on energy, incredible food, and nonstop discovery! " +
-         "Hong Kong is an unforgettable city — one of the most dynamic on the planet. " +
+         "Hong Kong is an unforgettable city - one of the most dynamic on the planet. " +
          "I spent time there and was blown away by the skyline, the dim sum, the night markets, " +
          "and how seamlessly East meets West around every corner. Every neighborhood " +
          "has something completely different to offer.",
@@ -57,7 +57,7 @@ const destinations = {
       emoji: "🏛️",
       description:
          "You're a culture lover with a passion for history, art, and world-class food! " +
-         "Italy is your dream destination — and mine too. From the ancient Colosseum in Rome " +
+         "Italy is your dream destination - and mine too. From the ancient Colosseum in Rome " +
          "to the canals of Venice and the rolling hills of Tuscany, Italy feels like an " +
          "open-air museum. And the food? Authentic pasta, wood-fired pizza, and fresh gelato " +
          "make every meal an event.",
@@ -65,7 +65,7 @@ const destinations = {
          "Visit April through June for pleasant weather before the summer crowds arrive",
          "Book major attractions (Colosseum, Vatican) online in advance to skip lines",
          "Rent a car to explore the Tuscan countryside and small hilltop villages",
-         "Learn a few basic Italian phrases — locals genuinely appreciate the effort"
+         "Learn a few basic Italian phrases - locals genuinely appreciate the effort"
       ]
    },
    japan: {
@@ -74,14 +74,14 @@ const destinations = {
       description:
          "You're a curious, open-minded traveler drawn to the extraordinary contrast of " +
          "ancient and modern! Japan is absolutely your destination. The neon-lit streets of " +
-         "Tokyo, the serene temples of Kyoto, the food culture, the precision, the beauty — " +
+         "Tokyo, the serene temples of Kyoto, the food culture, the precision, the beauty - " +
          "Japan is unlike anywhere else on Earth. I've dreamed of visiting during cherry " +
          "blossom season, and after this quiz, you should too.",
       tips: [
          "Visit late March through early April for the iconic cherry blossoms",
-         "Get a Japan Rail Pass before you leave home — it saves a ton on bullet trains",
-         "Download Google Translate with Japanese offline — it's a lifesaver",
-         "Try convenience store food (7-Eleven, Lawson) — it's surprisingly amazing"
+         "Get a Japan Rail Pass before you leave home - it saves a ton on bullet trains",
+         "Download Google Translate with Japanese offline - it's a lifesaver",
+         "Try convenience store food (7-Eleven, Lawson) - it's surprisingly amazing"
       ]
    }
 };
