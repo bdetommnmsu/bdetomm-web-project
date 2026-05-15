@@ -1,4 +1,4 @@
-# Brad DeTommaso — ICT280 Web Development Portfolio
+# Brad DeTommaso - ICT280 Web Development Portfolio
 **New Mexico State University | Spring 2026**
 
 A multi-project web development portfolio built across four assignments, resulting in a fully functional, responsive, and accessible 5-page website for a fictional client. Published via GitHub Pages.
@@ -8,17 +8,17 @@ A multi-project web development portfolio built across four assignments, resulti
 ---
 
 ## Table of Contents
-- [Project 2 — HTML Foundation Page](#project-2--html-foundation-page)
-- [Project 3 — CSS Styling](#project-3--css-styling)
-- [Project 4 — JavaScript Interactivity](#project-4--javascript-interactivity)
-- [Final Project — GreenTech Solutions](#final-project--greentech-solutions)
+- [Project 2 - HTML Foundation Page](#project-2--html-foundation-page)
+- [Project 3 - CSS Styling](#project-3--css-styling)
+- [Project 4 - JavaScript Interactivity](#project-4--javascript-interactivity)
+- [Final Project - GreenTech Solutions](#final-project--greentech-solutions)
 - [Technologies Used](#technologies-used)
 - [Setup & Running the Project](#setup--running-the-project)
 - [AI Assistance](#ai-assistance)
 
 ---
 
-## Project 2 — HTML Foundation Page
+## Project 2 - HTML Foundation Page
 
 **Live URL:** [https://bdetommnmsu.github.io/bdetomm-web-project/html/project2.html](https://bdetommnmsu.github.io/bdetomm-web-project/html/project2.html)
 
@@ -29,7 +29,7 @@ A personal travel page showcasing places I have visited and dream destinations I
 - Semantic HTML structure with headings, paragraphs, lists, a table, images, and links
 - Navigation bar linking between the homepage and the travel page
 - A destination comparison table covering Alaska, Victoria, the Caribbean, Hong Kong, Italy, and Japan
-- Inline HTML styling (no CSS) for fonts, colors, and layout — intentionally 1990s style per the assignment
+- Inline HTML styling (no CSS) for fonts, colors, and layout - intentionally 1990s style per the assignment
 
 ### What I Learned
 - How HTML documents are structured with `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>`
@@ -43,7 +43,7 @@ A personal travel page showcasing places I have visited and dream destinations I
 
 ---
 
-## Project 3 — CSS Styling
+## Project 3 - CSS Styling
 
 **Live URL:** [https://bdetommnmsu.github.io/bdetomm-web-project/html/project3.html](https://bdetommnmsu.github.io/bdetomm-web-project/html/project3.html)
 
@@ -73,12 +73,12 @@ An upgraded version of the Project 2 travel page, styled with an external CSS st
 
 ---
 
-## Project 4 — JavaScript Interactivity
+## Project 4 - JavaScript Interactivity
 
 **Live URL:** [https://bdetommnmsu.github.io/bdetomm-web-project/html/project4.html](https://bdetommnmsu.github.io/bdetomm-web-project/html/project4.html)
 
 ### Theme
-A travel destination quiz — the user answers four questions about their travel preferences and receives a personalized destination recommendation.
+A travel destination quiz - the user answers four questions about their travel preferences and receives a personalized destination recommendation.
 
 ### What I Built
 - A multi-question radio button quiz form
@@ -104,7 +104,7 @@ A travel destination quiz — the user answers four questions about their travel
 
 ---
 
-## Final Project — GreenTech Solutions
+## Final Project - GreenTech Solutions
 
 **Live URL:** [https://bdetommnmsu.github.io/bdetomm-web-project/final/](https://bdetommnmsu.github.io/bdetomm-web-project/final/)
 
@@ -146,19 +146,19 @@ bdetomm-web-project/
 ```
 
 ### Technologies Used
-- **HTML5** — Semantic elements (`<nav>`, `<main>`, `<section>`, `<article>`, `<header>`, `<footer>`)
-- **CSS3** — External stylesheet, CSS variables, Flexbox, Grid, media queries, transitions
-- **JavaScript** — DOM manipulation, event listeners, form validation, localStorage
-- **Google Fonts** — Montserrat and Open Sans
-- **GitHub Pages** — Static site hosting
+- **HTML5** - Semantic elements (`<nav>`, `<main>`, `<section>`, `<article>`, `<header>`, `<footer>`)
+- **CSS3** - External stylesheet, CSS variables, Flexbox, Grid, media queries, transitions
+- **JavaScript** - DOM manipulation, event listeners, form validation, localStorage
+- **Google Fonts** - Montserrat and Open Sans
+- **GitHub Pages** - Static site hosting
 
 ### JavaScript Features
-- **Mobile hamburger nav** — toggles on small screens, closes on outside click
-- **Product & blog category filter** — pill buttons show/hide cards by `data-category`
-- **Live product search** — filters cards as the user types
-- **Contact form validation** — real-time blur validation + full submit validation with per-field error messages
-- **Newsletter signup** — email format validation with inline feedback
-- **High contrast toggle** — accessibility feature that overrides CSS color variables site-wide, persisted in `localStorage`
+- **Mobile hamburger nav** - toggles on small screens, closes on outside click
+- **Product & blog category filter** - pill buttons show/hide cards by `data-category`
+- **Live product search** - filters cards as the user types
+- **Contact form validation** - real-time blur validation + full submit validation with per-field error messages
+- **Newsletter signup** - email format validation with inline feedback
+- **High contrast toggle** - accessibility feature that overrides CSS color variables site-wide, persisted in `localStorage`
 
 ### Accessibility Features
 - Skip-to-content link on every page
@@ -191,7 +191,7 @@ bdetomm-web-project/
 - Managing relative file paths across multiple folder levels (`../javascript/`, `../images/`)
 - Getting the high contrast CSS variable override to apply site-wide correctly
 - Ensuring the product filter and blog filter both worked from a single shared JavaScript function
-- Footer link color not inheriting correctly from `.footer-links` — fixed by explicitly setting `color` on `li` elements
+- Footer link color not inheriting correctly from `.footer-links` - fixed by explicitly setting `color` on `li` elements
 
 ---
 
@@ -222,7 +222,7 @@ https://bdetommnmsu.github.io/bdetomm-web-project/
 ```bash
 git clone https://github.com/bdetommnmsu/bdetomm-web-project.git
 ```
-2. Open any `.html` file directly in your browser — no server required.
+2. Open any `.html` file directly in your browser - no server required.
 3. To test all relative paths correctly, open from the root `index.html`.
 
 ---
